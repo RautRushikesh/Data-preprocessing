@@ -18,32 +18,34 @@ Run the script.
 python
 python preprocessing_pipeline.py
 # Preprocessing Steps
-1. Identify Features:
+# Preprocessing Steps
 
-i. Numeric features: Identified using the select_dtypes method for float and integer types.
+## Identify Features:
 
-ii. Categorical features: Identified using the select_dtypes method for object types.
+- **Numeric features:** Identified using the `select_dtypes` method for float and integer types.
+- **Categorical features:** Identified using the `select_dtypes` method for object types.
 
-2. Handle Missing Values in Numeric Features:
+## Handle Missing Values in Numeric Features:
 
-Missing values in numeric features are filled with the mean of the respective columns.
+- Missing values in numeric features are filled with the mean of the respective columns.
 
-3. Detect and Handle Outliers in Numeric Features:
+## Detect and Handle Outliers in Numeric Features:
 
-i. Outliers in numeric features are detected using the Interquartile Range (IQR) method.
+- Outliers in numeric features are detected using the Interquartile Range (IQR) method.
+- Outliers are replaced with the mean of the respective columns.
 
-ii. Outliers are replaced with the mean of the respective columns.
+## Normalize Numeric Features:
 
-4. Normalize Numeric Features:
+- Numeric features are standardized using the Standard Scaler from scikit-learn.
 
-Numeric features are standardized using the Standard Scaler from scikit-learn.
+## Handle Missing Values in Categorical Features:
 
-5. Handle Missing Values in Categorical Features:
+- Missing values in categorical features are filled with the mode (most frequent value) of the respective columns.
 
-Missing values in categorical features are filled with the mode (most frequent value) of the respective columns.
-Output:
+## Output:
 
-The processed dataset is displayed in the console.
+- The processed dataset is displayed in the console.
+
 Example
 python
 import pandas as pd
