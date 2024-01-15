@@ -34,21 +34,27 @@ python preprocessing_pipeline.py
 
 - The processed dataset is displayed in the console.
 
--Example
--python
--import pandas as pd
+Example
 
--from preprocessing_pipeline import data_ppr_pipeline
+python
 
--Read the dataset
--data = pd.read_csv("data.csv")
+import pandas as pd
 
--Apply the preprocessing pipeline
--processed_data = data_ppr_pipeline(data)
+from preprocessing_pipeline import data_ppr_pipeline
 
--Display the processed data
--print("Processed Data:")
--print(processed_data)
+Read the dataset
+
+data = pd.read_csv("data.csv")
+
+Apply the preprocessing pipeline
+
+processed_data = data_ppr_pipeline(data)
+
+Display the processed data
+
+print("Processed Data:")
+
+print(processed_data)
 # Notes
 1. This script assumes the input dataset is in CSV format and follows the standard conventions of data representation.
 2. Ensure that the column types in your dataset match the assumptions made in the script (numeric features: float or int, categorical features: object).
