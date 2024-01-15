@@ -20,8 +20,8 @@ python preprocessing_pipeline.py
 # Preprocessing Steps
 1. Identify Features:
 
-a. Numeric features: Identified using the select_dtypes method for float and integer types.
-b. Categorical features: Identified using the select_dtypes method for object types.
+i. Numeric features: Identified using the select_dtypes method for float and integer types.
+ii. Categorical features: Identified using the select_dtypes method for object types.
 
 2. Handle Missing Values in Numeric Features:
 
@@ -29,8 +29,8 @@ Missing values in numeric features are filled with the mean of the respective co
 
 3. Detect and Handle Outliers in Numeric Features:
 
-a. Outliers in numeric features are detected using the Interquartile Range (IQR) method.
-b. Outliers are replaced with the mean of the respective columns.
+i. Outliers in numeric features are detected using the Interquartile Range (IQR) method.
+\nii. Outliers are replaced with the mean of the respective columns.
 
 4. Normalize Numeric Features:
 
