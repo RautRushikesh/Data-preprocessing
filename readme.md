@@ -1,24 +1,23 @@
-Data Preprocessing Pipeline
-Overview
+# Data Preprocessing Pipeline
+# Overview
 This Python script implements a data preprocessing pipeline using the Pandas library and scikit-learn. The purpose of the pipeline is to prepare a dataset for machine learning tasks by handling missing values, detecting and handling outliers, and normalizing numeric features.
 
-Dependencies
+# Dependencies
 Pandas
 NumPy
 scikit-learn
 Make sure to install the required dependencies using:
 
 bash
-Copy code
 pip install pandas numpy scikit-learn
-Usage
+
+# Usage
 Ensure you have the necessary dependencies installed.
 Place your dataset in a CSV file named data.csv in the same directory as the script.
 Run the script.
 python
-Copy code
 python preprocessing_pipeline.py
-Preprocessing Steps
+# Preprocessing Steps
 Identify Features:
 
 Numeric features: Identified using the select_dtypes method for float and integer types.
