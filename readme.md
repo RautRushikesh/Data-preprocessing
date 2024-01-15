@@ -18,21 +18,21 @@ Run the script.
 python
 python preprocessing_pipeline.py
 # Preprocessing Steps
-Identify Features:
+1. Identify Features:
 
-Numeric features: Identified using the select_dtypes method for float and integer types.
-Categorical features: Identified using the select_dtypes method for object types.
-Handle Missing Values in Numeric Features:
+a. Numeric features: Identified using the select_dtypes method for float and integer types.
+b. Categorical features: Identified using the select_dtypes method for object types.
+2. Handle Missing Values in Numeric Features:
 
 Missing values in numeric features are filled with the mean of the respective columns.
-Detect and Handle Outliers in Numeric Features:
+3. Detect and Handle Outliers in Numeric Features:
 
-Outliers in numeric features are detected using the Interquartile Range (IQR) method.
-Outliers are replaced with the mean of the respective columns.
-Normalize Numeric Features:
+a. Outliers in numeric features are detected using the Interquartile Range (IQR) method.
+b. Outliers are replaced with the mean of the respective columns.
+4. Normalize Numeric Features:
 
 Numeric features are standardized using the Standard Scaler from scikit-learn.
-Handle Missing Values in Categorical Features:
+5. Handle Missing Values in Categorical Features:
 
 Missing values in categorical features are filled with the mode (most frequent value) of the respective columns.
 Output:
@@ -40,7 +40,6 @@ Output:
 The processed dataset is displayed in the console.
 Example
 python
-Copy code
 import pandas as pd
 from preprocessing_pipeline import data_ppr_pipeline
 
@@ -53,10 +52,10 @@ processed_data = data_ppr_pipeline(data)
 # Display the processed data
 print("Processed Data:")
 print(processed_data)
-Notes
-This script assumes the input dataset is in CSV format and follows the standard conventions of data representation.
-Ensure that the column types in your dataset match the assumptions made in the script (numeric features: float or int, categorical features: object).
-Feel free to modify and expand this template based on additional details or specific considerations related to your use case.
+# Notes
+1. This script assumes the input dataset is in CSV format and follows the standard conventions of data representation.
+2. Ensure that the column types in your dataset match the assumptions made in the script (numeric features: float or int, categorical features: object).
+
 
 
 
