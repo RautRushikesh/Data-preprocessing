@@ -18,30 +18,18 @@ Run the script.
 python
 python preprocessing_pipeline.py
 # Preprocessing Steps
-# Preprocessing Steps
-
 ## Identify Features:
-
 - **Numeric features:** Identified using the `select_dtypes` method for float and integer types.
 - **Categorical features:** Identified using the `select_dtypes` method for object types.
-
 ## Handle Missing Values in Numeric Features:
-
 - Missing values in numeric features are filled with the mean of the respective columns.
-
 ## Detect and Handle Outliers in Numeric Features:
-
 - Outliers in numeric features are detected using the Interquartile Range (IQR) method.
 - Outliers are replaced with the mean of the respective columns.
-
 ## Normalize Numeric Features:
-
 - Numeric features are standardized using the Standard Scaler from scikit-learn.
-
 ## Handle Missing Values in Categorical Features:
-
 - Missing values in categorical features are filled with the mode (most frequent value) of the respective columns.
-
 ## Output:
 
 - The processed dataset is displayed in the console.
