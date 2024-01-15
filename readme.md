@@ -37,15 +37,16 @@ python preprocessing_pipeline.py
 Example
 python
 import pandas as pd
+
 from preprocessing_pipeline import data_ppr_pipeline
 
-# Read the dataset
+-Read the dataset
 data = pd.read_csv("data.csv")
 
-# Apply the preprocessing pipeline
+-Apply the preprocessing pipeline
 processed_data = data_ppr_pipeline(data)
 
-# Display the processed data
+-Display the processed data
 print("Processed Data:")
 print(processed_data)
 # Notes
